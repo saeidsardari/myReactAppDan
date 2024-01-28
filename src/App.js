@@ -1,8 +1,6 @@
-import logo from './images/logo.svg';
 import './App.css';
 import { useState } from 'react'
-import { computeHeadingLevel } from '@testing-library/react';
-import Title from './Title.js'
+import Title from './components/Title';
 
 
 function App() {
@@ -24,8 +22,8 @@ function App() {
   }
   return (
     <div className='App'>
+    <Title />
       {
-        <Title />
       showEvents && (<div>
         <button onClick={()=> setShowEvents(false)}>Hide</button>
       </div>)
