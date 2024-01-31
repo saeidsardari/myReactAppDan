@@ -1,8 +1,11 @@
-export default function Title (){
+import'./Title.css'
+
+export default function Title (props){
     return (
-        <div class="Title">
-            <h1>best movies</h1>
-            <h2>best actor</h2>
+        <div className='title-block'>
+            <h1 class="Title">{props.title}</h1>
+            <h1 class="subtitle">{props.subtitle}</h1>
+            
         </div>
     )
 }
